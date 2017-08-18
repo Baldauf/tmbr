@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    <div class="page" aria-label="Content">
+      <div class="page__header">
+      </div>
+      <div class="page__body">
+        <div class="page-body">
+          <div class="gvwy">
+            <div class="gvwy__img">
+              <img src="/build/img/{{ post.img }}" alt="">
+            </div>
+            <div class="gvwy__timeline">
+              {% include enter-to-win/timeline.html %}
+            </div>
+            <h4 class="gvwy__label">{{ post.title }} avcd</h4>
+            <div class="gvwy__details">
+              <span class="gvwy__winner-count">{{ post.winners }} Winner</span>
+              <span class="gvwy__value">${{ post.value }} ARV</span>
+            </div>
+            <p class="gvwy__caption">{{ content }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="page__footer">
+        {% include cta.html %}
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
+
+</html>

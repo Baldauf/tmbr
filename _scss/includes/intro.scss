@@ -1,0 +1,18 @@
+$curve: cubic-bezier(.81,.17,.82,1);
+
+.tree-box {
+  width: 60px;
+}
+#tree {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 20;
+  animation: dash 2s $curve forwards;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,45 @@
+//------------------------------------------------------------------------------
+// Custom normalization
+
+* { box-sizing: border-box; }
+a:hover { text-decoration: underline; }
+h1,h2,h3,h4,h5,h6 { margin: 0; }
+ul,ol { padding: 0; margin: 0; -webkit-padding-start: 0; }
+
+html, body {
+  height: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+  @include flex(column);
+  background: #fff;
+  min-height: 100%;
+  margin: 0;
+  font-family: $font-system;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+small {
+  font-family: $font-small;
+}
+
+pre.svg { // hide the svg sprite
+  @extend %hidden;
+}
+
+em.fine-print {
+  display: block;
+  width: 100%;
+  margin: 0 auto 80px;
+  color: $grey-mid;
+  font-size: in-rems(12px);
+  text-align: center;
+
+  @include media(">=tablet") {
+    margin-bottom: 100px;
+  }
+}

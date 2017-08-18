@@ -1,0 +1,20 @@
+- link:   http://twitter.com/rafflecopter
+  name:   Find my Entries from Twitter
+  icon:   twitter
+  status: connected
+- link:   http://facebook.com/rafflecopter
+  name:   Find my Entries from Facebook
+  icon:   facebook
+  status: default
+- link:   http://instagram.com
+  name:   Find my Entries from Instagram
+  icon:   instagram
+  status: default
+- link:   http://mailchimp.com
+  name:   Find my Entries from MailChimp
+  icon:   mailchimp
+  status: failed
+- link:   http://youtube.com
+  name:   Find my Entries from YouTube
+  icon:   youtube
+  status: default

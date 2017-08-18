@@ -1,0 +1,14 @@
+- type:  twitter
+  label: Follow
+  link:  http://twitter.com/rafflecopter
+- type:  facebook
+  label: Like
+  link:  http://facebook.com/rafflecopter
+  icon:  like
+- type:  instagram
+  label: Follow
+  link:  https://www.instagram.com/rafflecopter/
+- link: http://rafflecopter.us2.list-manage.com/subscribe?u=eb161ad3048507b6c9410df94&id=072f896fac
+  type: mailchimp
+  label: Subscribe
+  icon: mailchimp

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    <div class="page" aria-label="Content">
+      <div class="page__header">
+        <!-- {% include header.html %} -->
+      </div>
+      <div class="page__body">
+        <div class="page-body">
+          {{ content }}
+        </div>
+      </div>
+      {% include lines.html %}
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+    {% for js in page.jsarr %}
+      <script type="text/javascript">
+         {% include {{ js }} %}
+      </script>
+    {% endfor %}
+  </body>
+
+</html>
