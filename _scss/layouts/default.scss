@@ -17,6 +17,7 @@ body {
 .page__body {
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 .page-body {
   position: absolute;
@@ -48,6 +49,8 @@ body {
   font-family: $font-syst;
   font-size: in-rems(14px);
   line-height: 1.5;
+
+  display: none;
 
   @include media(">=tablet") {
     margin-right: -30px;
