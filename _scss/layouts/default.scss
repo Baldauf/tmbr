@@ -118,6 +118,36 @@ body {
   &--insta img {
     transform: translateY(1px);
   }
+
+  &--etsy {
+    position: relative;
+    &:hover {
+      cursor: help;
+      &:before, &:after {
+        position: absolute;
+      }
+      &:before {
+        content: 'Coming Soon :)';
+        display: block;
+        width: 90px;
+        bottom: -40px;
+        left: -6px;
+        padding: 7px;
+        font-weight: normal;
+        background: #f0f0f0;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        bottom: -16px;
+        left: 10px;
+        background: #f0f0f0;
+        transform: rotate(45deg);
+      }
+    }
+  }
 }
 
 
